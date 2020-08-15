@@ -1,0 +1,52 @@
+@import url('https://fonts.googleapis.com/css2?family=Reenie+Beanie&display=swap');
+
+body {
+    margin:           0;
+    padding:          0;
+    background-color: $color-raisin-black;
+}
+
+.input {
+    margin:     auto;
+    width:      500px;
+    margin-top: 50px;
+}
+
+
+ul {
+    padding: 0;
+    width:   700px;
+    margin:  auto;
+}
+
+.tasks {
+    margin:      auto;
+    width:       700px;
+    color:       transparentize($color-white, 0.5);
+    font-family: Verdana, serif;
+    font-size:   20px;
+
+    & > div.noTasks {
+        font-size:  12px;
+        text-align: center;
+
+        & > em {
+            font-weight: bold;
+            text-transform: uppercase;
+            background-color: $color-flame;
+            padding:          10px;
+            border-radius:    5px;
+            color:            $color-white
+        }
+    }
+
+    & > div {
+        & > span {
+
+            margin-bottom: 10px;
+            display:       block;
+        }
+    }
+
+}
+

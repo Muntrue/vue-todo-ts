@@ -1,0 +1,58 @@
+div.container{
+    position: relative;
+}
+
+input {
+    box-sizing: border-box;
+    padding:       20px;
+    padding-right: 70px;
+    border-radius: 5px;
+    border:        0;
+    outline:       none;
+    font-family:   $font-handwriting;
+    font-size:     30px;
+    width:         500px;
+    z-index:       2;
+    position:      relative;
+    margin-bottom: 50px;
+    background-color: $color-white;
+
+    transition:    box-shadow 0.3s ease-in-out;
+
+    &.focus {
+        position:   fixed;
+        box-shadow: inset 0 0 0 5px $color-flame;
+    }
+
+    &.error{
+        @include wiggle-forever-small
+    }
+}
+
+.overlay {
+    width:            100%;
+    height:           100%;
+    left:             0;
+    top:              0;
+    position:         fixed;
+    background-color: rgba(0, 0, 0, 0.9);
+}
+
+.fade-enter-active, .fade-leave-active {
+    transition: opacity .3s;
+}
+
+.fade-enter, .fade-leave-to /* .fade-leave-active below version 2.1.8 */
+{
+    opacity: 0;
+}
+
+.charsleft{
+    position:    absolute;
+    right:       10px;
+    top:         14px;
+    font-size:   40px;
+    font-family: Verdana, serif;
+    color:       transparentize($color-flame, 0.8);
+    z-index:     2;
+}

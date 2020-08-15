@@ -1,0 +1,43 @@
+{
+  "name": "vue-decorators-ts",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "webpack-dev-server --config webpack.config.js --mode development"
+  },
+  "devDependencies": {
+    "@babel/core": "~7.2",
+    "@babel/plugin-proposal-class-properties": "^7.3.4",
+    "@babel/plugin-proposal-decorators": "^7.3.0",
+    "@babel/plugin-proposal-json-strings": "~7.2",
+    "@babel/plugin-syntax-dynamic-import": "~7.2",
+    "@babel/plugin-syntax-import-meta": "~7.2",
+    "@babel/preset-env": "~7.3",
+    "@babel/preset-typescript": "^7.10.4",
+    "@muntrue/generateimports": "^1.1.0",
+    "babel-loader": "^8.1.0",
+    "copy-webpack-plugin": "^6.0.3",
+    "css-loader": "^4.2.1",
+    "node-sass": "^4.14.1",
+    "sass": "^1.26.10",
+    "sass-loader": "^9.0.3",
+    "sass-resources-loader": "^2.0.3",
+    "style-loader": "^1.2.1",
+    "ts-loader": "^8.0.2",
+    "vue-loader": "^15.9.3",
+    "vue-template-compiler": "^2.6.11",
+    "vuetype": "^0.3.2",
+    "webpack": "^4.44.1",
+    "webpack-cli": "^3.3.12",
+    "webpack-dev-server": "^3.11.0"
+  },
+  "dependencies": {
+    "typescript": "^3.9.7",
+    "vue": "^2.6.11",
+    "vue-class-component": "^7.2.5",
+    "vue-property-decorator": "^9.0.0"
+  },
+  "author": "",
+  "license": "ISC"
+}

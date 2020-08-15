@@ -1,0 +1,84 @@
+$color-raisin-black:   #171A21;
+$color-flame:          #EC4E20;
+$color-cambridge-blue: #9DCBBA;
+$color-glaucous:       #6F8AB7;
+$color-white:          #EEE7E7;
+
+$font-handwriting:     'Reenie Beanie', cursive;
+
+@keyframes wiggle {
+    0% {
+        transform: rotate(10deg);
+    }
+    25% {
+        transform: rotate(-10deg);
+    }
+    50% {
+        transform: rotate(20deg);
+    }
+    75% {
+        transform: rotate(-5deg);
+    }
+    100% {
+        transform: rotate(0deg);
+    }
+}
+
+@keyframes infiniwiggle {
+    0% {
+        transform: rotate(2deg);
+    }
+    25% {
+        transform: rotate(-2deg);
+    }
+    50% {
+        transform: rotate(4deg);
+    }
+    75% {
+        transform: rotate(-4deg);
+    }
+    100% {
+        transform: rotate(2deg);
+    }
+}
+
+@keyframes infiniwigglesmall {
+    0% {
+        transform: rotate(1deg);
+    }
+    25% {
+        transform: rotate(-1deg);
+    }
+    50% {
+        transform: rotate(2deg);
+    }
+    75% {
+        transform: rotate(-2deg);
+    }
+    100% {
+        transform: rotate(1deg);
+    }
+}
+
+@mixin hover-wiggle {
+    &:hover {
+        -webkit-animation-name:            wiggle;
+        -webkit-animation-duration:        1000ms;
+        -webkit-animation-iteration-count: 1;
+        -webkit-animation-timing-function: ease-in-out;
+    }
+}
+
+@mixin wiggle-forever {
+    -webkit-animation-name:            infiniwiggle;
+    -webkit-animation-duration:        1000ms;
+    animation-iteration-count:         infinite;
+    -webkit-animation-timing-function: ease-in-out;
+}
+
+@mixin wiggle-forever-small {
+    -webkit-animation-name:            infiniwigglesmall;
+    -webkit-animation-duration:        300ms;
+    animation-iteration-count:         infinite;
+    -webkit-animation-timing-function: ease-in-out;
+}
