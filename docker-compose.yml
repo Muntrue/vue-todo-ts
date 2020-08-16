@@ -1,0 +1,13 @@
+version: "3.2"
+services:
+  todo-muntrue-httpd:
+    environment:
+      - VIRTUAL_HOST=todo.muntrue.tk
+    build:
+      context: ./
+      dockerfile: httpd.Dockerfile
+
+networks:
+  default:
+    external:
+      name: portal
