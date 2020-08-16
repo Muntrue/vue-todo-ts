@@ -3,10 +3,7 @@ services:
   todo-muntrue-httpd:
     environment:
       - VIRTUAL_HOST=todo.muntrue.tk
-    build:
-      context: ./
-      dockerfile: httpd.Dockerfile
-
+    build: .
 networks:
   default:
     external:
